@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-
+#include <cassert>
 
 class Solution {
 public:
@@ -28,27 +28,21 @@ int main(){
 		int k = 1;
 		std::vector<int> startTime = {1,3};
 		std::vector<int> endTime = {2,5};
-		std::cout << "TEST 1:"<<std::endl;
-		test.maxFreeTime(eventTime,k,startTime,endTime);
-		std::cout << std::endl; 
+		assert(2 == test.maxFreeTime(eventTime,k,startTime,endTime));
 	}
 	{
 		int eventTime = 10;
 		int k = 1;
 		std::vector<int> startTime = {0,2,9};
 		std::vector<int> endTime = {1,4,10};
-		std::cout << "TEST 2:"<<std::endl;
-		test.maxFreeTime(eventTime,k,startTime,endTime);
-		std::cout << std::endl; 
+		assert(6 == test.maxFreeTime(eventTime,k,startTime,endTime));
 	}
 	{
 		int eventTime = 5;
 		int k = 2;
 		std::vector<int> startTime = {0,1,2,3,4};
 		std::vector<int> endTime = {1,2,3,4,5};
-		std::cout << "TEST 3:"<<std::endl;
-		test.maxFreeTime(eventTime,k,startTime,endTime);
-		std::cout << std::endl; 
+		assert(0 == test.maxFreeTime(eventTime,k,startTime,endTime));
 	}
 	return 0;
 }
