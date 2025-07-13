@@ -55,17 +55,17 @@ int main(){
 	{
 		std::vector<int> players = {4,7,9};
 		std::vector<int> trainers = {8,2,5,8};
-		std::cout << "TEST1: " << test.matchPlayersAndTrainers(players, trainers) << std::endl;
+		assert(2 == test.matchPlayersAndTrainers(players, trainers));
 	}
 	{
 		std::vector<int> players = {1,1,1};
 		std::vector<int> trainers = {10};
-		std::cout << "TEST2: " << test.matchPlayersAndTrainers(players, trainers) << std::endl;
+		assert(1 == test.matchPlayersAndTrainers(players, trainers));
 	}
 	{
 		std::vector<int> players = {2,1};
 		std::vector<int> trainers = {2,2};
-		std::cout << "TEST3: " << test.matchPlayersAndTrainers(players, trainers) << std::endl;
+		assert(2 == test.matchPlayersAndTrainers(players, trainers));
 	}
 	return 0;
 }
