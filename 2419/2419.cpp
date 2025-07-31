@@ -24,24 +24,24 @@ public:
 int main(){
 	Solution test;
 	{
-		std::vector<int> nums={1,2,3,3,2,2}; //2
-		std::cout << test.longestSubarray(nums) << std::endl;
+		std::vector<int> nums={1,2,3,3,2,2};
+		assert(2 == test.longestSubarray(nums));
 	}
 	{
-		std::vector<int> nums={25,25,25,26}; //1
-		std::cout << test.longestSubarray(nums) << std::endl;
+		std::vector<int> nums={25,25,25,26};
+		assert(1 == test.longestSubarray(nums));
 	}
 	{
-		std::vector<int> nums={1,2,3,4}; //1
-		std::cout << test.longestSubarray(nums) << std::endl;
+		std::vector<int> nums={1,2,3,4};
+		assert(1 == test.longestSubarray(nums));
 	}
 	{
-		std::vector<int> nums={1,2,3,4,5,6,6}; //2
-		std::cout << test.longestSubarray(nums) << std::endl;
+		std::vector<int> nums={1,2,3,4,5,6,6};
+		assert(2 == test.longestSubarray(nums));
 	}
 	{
-		std::vector<int> nums={100,99,100,2}; //1
-		std::cout << test.longestSubarray(nums) << std::endl;
+		std::vector<int> nums={100,99,100,2};
+		assert(1 == test.longestSubarray(nums));
 	}
 	return 0;
 }
